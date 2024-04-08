@@ -1,8 +1,13 @@
-
+import Chai from "./chai"
 function App() {
 
   return (
-    <h1>Hello World with vite | Soam Tripathy</h1>
+    //fragment in react
+    <> 
+    <Chai/>
+    <h1>Chai aur code</h1>
+    <p>Test</p>
+    </>
   )
 }
 
