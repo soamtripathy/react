@@ -6,6 +6,8 @@ import "./App.css";
 function App() {
   let [counter, setCounter] =   useState(0)
 
+  // 
+
 
   //let counter = 15;
 
@@ -16,7 +18,14 @@ function App() {
     else{
       alert("Don't add value")
     }
-    setCounter(counter)
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    setCounter(prevCounter => prevCounter+1)
+    //setCounter(counter)
+    
+    // It will not print the value 4 rather it will update by 1
+    // Because due to fibre, useState send programs in batch
 
   };
   const removeValue = () => {
