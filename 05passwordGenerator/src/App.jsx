@@ -24,9 +24,11 @@ function App() {
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password);
   }, [password]);
+
   useEffect(() => {
     passwordGenerator();
   }, [length, numAllowed, charAllowed, passwordGenerator]);
+
   return (
     <>
       <div className="w-full max-w-lg mx-auto mt-10 shadow-md rounded-lg px-6 py-10 text-blue-500 bg-gray-300">
