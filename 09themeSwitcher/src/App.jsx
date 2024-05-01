@@ -16,10 +16,10 @@ function App() {
   };
   // actual change in theme
 
-  // useEffect(() => {
-  //   document.querySelector("html").clasList.remove("light", "dark");
-  //   document.querySelector("html").classList.add(themeMode);
-  // }, [themeMode]);
+  useEffect(() => {
+    document.querySelector("html").classList.remove("light", "dark");
+    document.querySelector("html").classList.add(themeMode);
+  }, [themeMode]);
 
   return (
     <ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
